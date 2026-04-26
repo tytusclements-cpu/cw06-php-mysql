@@ -1,0 +1,153 @@
+body.demo-page {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #0b1220, #101a2f);
+  color: #e6edf8;
+}
+
+.demo-wrap {
+  width: min(920px, 92vw);
+  margin: 2.25rem auto;
+}
+
+.demo-wrap.wide {
+  width: min(1200px, 95vw);
+}
+
+.demo-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  border-radius: 16px;
+  padding: 1.2rem;
+  box-shadow: 0 18px 50px rgba(3, 10, 25, 0.35);
+}
+
+.demo-title {
+  margin: 0 0 0.35rem;
+  font-size: 1.5rem;
+}
+
+.demo-subtitle {
+  margin: 0 0 1rem;
+  color: #a7b4cc;
+  font-size: 0.95rem;
+}
+
+.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.demo-field {
+  display: grid;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.demo-label {
+  font-size: 0.85rem;
+  color: #a7b4cc;
+}
+
+.demo-input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  border-radius: 10px;
+  padding: 0.65rem 0.75rem;
+  background: rgba(15, 23, 42, 0.45);
+  color: #e6edf8;
+}
+
+.demo-input:focus {
+  outline: none;
+  border-color: #22d3ee;
+  box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.16);
+}
+
+.demo-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.demo-btn {
+  border: 0;
+  border-radius: 10px;
+  padding: 0.65rem 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(120deg, #22d3ee, #38bdf8);
+  color: #04101c;
+}
+
+.demo-btn:hover {
+  opacity: 0.85;
+}
+
+.danger-btn {
+  background: linear-gradient(120deg, #fb7185, #f43f5e);
+  color: white;
+}
+
+.demo-link {
+  color: #22d3ee;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.demo-link:hover {
+  text-decoration: underline;
+}
+
+.demo-link.danger {
+  color: #fb7185;
+}
+
+.demo-msg {
+  margin-top: 0.8rem;
+  border-radius: 10px;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+.demo-msg.success {
+  color: #34d399;
+  border-color: rgba(52, 211, 153, 0.45);
+}
+
+.demo-msg.error {
+  color: #fb7185;
+  border-color: rgba(251, 113, 133, 0.45);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  overflow-x: auto;
+}
+
+th,
+td {
+  padding: 0.7rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+  text-align: left;
+}
+
+th {
+  color: #22d3ee;
+}
+
+@media (max-width: 700px) {
+  .demo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  table {
+    font-size: 0.85rem;
+  }
+}
